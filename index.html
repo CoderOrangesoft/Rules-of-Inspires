@@ -3,15 +3,15 @@
 
 <head>
     <title>Inspires</title>
-    <link rel="icon" href="img/i.png" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta name="keywords" content="Inspires,codemao,Codemao,workshop,work-shop,工作室">
-    <meta name="author" content="CoderOrangesoft,Cosider">
-    <meta name="description" content="Creator of Inspires. ©Inspires 2023">
-    <meta property="og:title" content="Inspires">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content=" https://coderorangesoft.github.io/Inspires">
-    <meta property="og:image" content="https://cdn-community.codemao.cn/47/community/d2ViXzUwMDFfMjI5Mjc1Ml8xOTAzNF8xNjg3NjkxNjY0NTYyX2Y4MzA2NjQw.png">
+    <link rel="icon" href="img/i.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Inspires,codemao,Codemao,workshop,work-shop,工作室" />
+    <meta name="author" content="CoderOrangesoft,Cosider" />
+    <meta name="description" content="Creator of Inspires. ©Inspires 2023" />
+    <meta property="og:title" content="Inspires" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content=" https://coderorangesoft.github.io/Inspires" />
+    <meta property="og:image" content="https://cdn-community.codemao.cn/47/community/d2ViXzUwMDFfMjI5Mjc1Ml8xOTAzNF8xNjg3NjkxNjY0NTYyX2Y4MzA2NjQw.png" />
 </head>
 <style>
     #studio-icon {
@@ -24,14 +24,46 @@
         z-index: 0;
     }
     
-    #introduction {}
+    #introduction {
+        top: 10px;
+        left: 50px;
+    }
+    
+    #introduction>* {
+        position: relative;
+    }
+    
+    #block-1 {
+        width: 600px;
+        height: 600px;
+        background-color: #ffffffcd;
+        border-radius: 5%;
+    }
 </style>
 
-<body style="background-color: rgb(5,10,20);">
+<body style="background-color: rgb(5, 10, 20)">
     <div id="root">
-        <div id="studio-icon"><img src="/img/icon.png"></div>
+        <div id="studio-icon">
+            <img src="/img/icon.png" />
+        </div>
         <div id="introduction">
-            <div id=""></div>
+            <div id="title" style="left: 5px">
+                <p style="
+                            font-size: 5em;
+                            color: #fff;
+                            width: 0px;
+                            height: 10px;
+                        ">
+                    <u>Wecome</u> to <i>Inspires</i>
+                </p>
+            </div>
+            <!-- <div style="
+                        top: 0px;
+                        background-color: #fff;
+                        width: 400px;
+                        height: 10px;
+                    "></div> -->
+            <div id="block-1"></div>
         </div>
     </div>
 </body>
