@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .works {
+            width: 150px;
+            height: 300px;
+            background-color: #999;
+            border-radius: 10%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .workcard {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            transform: translate(100%, 100%);
+            width: 600px;
+            height: 400px;
+            background-color: #85858522;
+            border-radius: 10%;
+            backdrop-filter: blur(20%);
+            animation: fade-in 0.5s forwards;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translate(100%, 100%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+        }
+
+
+        .commentArea {
+            float: right;
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .comment {
+            width: 100%;
+            height: 200px;
+            overflow-y: auto;
+        }
+
+        .avater {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .username {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .content {
+            position: relative;
+            top: 270px;
+        }
+
+        .like,
+        .favorites,
+        .view {
+            display: inline;
+            margin-right: 12px;
+            font-size: 12px;
+        }
+
+        svg {
+            width: 12px;
+            height: 12px;
+            vertical-align: middle;
+        }
+
+        .emptyboard {
+            width: 5%;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .commentArea {
+            width: 40%;
+        }
+
+        .comment {
+            width: 100%;
+            height: 200px;
+        }
+
+        .avater {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .username {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .content {
+            font-family: sans-serif;
+            color: #000;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="work-card">
+        <div class="case">
+            <div class="author">
+                <img class="avatar"></img>
+                <p class="author_name"></p>
+            </div>
+            <div class="content">
+                <div class="workname">
+                    <p></p>
+                </div>
+                <div class="intorduction"><span></span></div>
+                <div class="view"></div>
+                <div class="like"></div>
+                <div class="favorites"></div>
+            </div>
+            <img scr="" class="cover"></img>
+        </div>
+        <div class="commentArea">
+            <div class="">
+                <div class="comment">
+                    <div class="avaterbox">
+                        <img src="" alt="" class="avater">
+                    </div>
+                    <div class="username">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
