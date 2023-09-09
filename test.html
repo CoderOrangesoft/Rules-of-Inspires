@@ -2,33 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
         #work_card {
             position: absolute;
-            right: 0;
-            bottom: 0;
             width: 600px;
             height: 400px;
             background-color: rgba(200, 200, 200, 0.9);
-            border-radius: 5%;
-            opacity: 5%;
+            border: rgba(170, 170, 170, 0.9) 5px;
+            border-radius: 10px;
             backdrop-filter: blur(20%);
-            box-shadow: #eee;
+            box-shadow: rgba(50, 50, 50, 0.8) 10px
         }
 
         #work_card>* {
             position: relative;
         }
 
-        .case {
-            position: relative;
+        .case>* {
+            position: absolute;
             padding: 20px;
         }
 
-        .author img.avatar {
+        .authors {
+            float: right;
+        }
+
+        .authors img.avatar {
             width: 50px;
             height: 50px;
             border-radius: 50%;
@@ -38,7 +40,7 @@
         }
 
         .author_name {
-            font-size: 5px;
+            font-size: 1.2em;
         }
 
         .workname p {
@@ -51,6 +53,7 @@
         }
 
         .introduction span {
+            float: right;
             font-size: 14px;
             color: #555;
         }
@@ -132,51 +135,58 @@
 <body>
     <div id="work_card">
         <div class="case">
-            <div class="author">
-                <img class="avatar" src="https://via.placeholder.com/50x50.png" alt="">
-                <p class="author_name">John Smith</p>
+            <div class="author_broad">
+                <div id="author1" class="author">
+                    <img class="avatar" src="https://via.placeholder.com/50x50.png" alt="" />
+                    <p class="author_name">John Smith</p>
+                </div>
             </div>
             <div class="content">
                 <div class="workname">
                     <p>My awesome artwork</p>
                 </div>
                 <div class="introduction"><span>This is a description of my artwork.</span></div>
-                <div class="view"><svg viewBox="0 0 24 24">
+                <div class="view">
+                    <svg viewBox="0 0 24 24">
                         <path fill="currentColor"
                             d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.11 0-2-.89-2-2s.89-2 2-2 2 .89 2 2-.89 2-2 2z">
                         </path>
                         <path d="M0 0h24v24H0z" fill="none"></path>
-                    </svg>1234</div>
-                <div class="like"><svg viewBox="0 0 24 24">
+                    </svg>1234
+                </div>
+                <div class="like">
+                    <svg viewBox="0 0 24 24">
                         <path fill="currentColor"
                             d="M20.98 4.1C19.93 3.39 18.72 3 17.5 3c-1.84 0-3.34.94-4.27 2.3C12.84 3.94 10.69 3 8.5 3 6.28 3 5.07 3.39 4.02 4.1a5.18 5.18 0 0 0-1.62 3.8c0 2.87 2.33 5.21 5.19 5.21l.4-.02V21c0 .55.45 1 1 1h5c.55 0 1-.45 1-1v-7.92l.39.02c2.86 0 5.19-2.34 5.19-5.21a5.18 5.18 0 0 0-1.63-3.8zM8.5 5c1.16 0 2.22.45 3.02 1.19l.98 1.02.97-1.01A4.03 4.03 0 0 1 15.5 5c1.66 0 3.19.81 4.14 2.04.87 1.18 1.36 2.64 1.36 4.17a4.16 4.16 0 0 1-1.29 3.02c-.76.79-1.75 1.23-2.81 1.23l-.39-.02V20h-3v-6c0-.55-.45-1-1-1H9c-.55 0-1 .45-1 1v6H5v-7.92l-.39.02c-1.06 0-2.06-.44-2.81-1.23A4.16 4.16 0 0 1 1 9.9a4.03 4.03 0 0 1 1.53-3.17A5.19 5.19 0 0 0 8.5 5zm7.5 13h-3v-6c0-.55-.45-1-1-1H9c-.55 0-1 .45-1 1v6H5V9.98l-.39.02C3.54 10 2.07 11.44 2.07 13.16c0 2.23 1.99 4.05 4.43 4.05 1.51 0 2.8-.69 3.63-1.75.42-.52.99-.81 1.57-.81s1.15.29 1.58.81c.82 1.06 2.12 1.75 3.63 1.75 2.44 0 4.43-1.82 4.43-4.05.01-1.72-1.46-3.16-3.01-3.18z">
                         </path>
                         <path d="M0 0h24v24H0z" fill="none"></path>
-                    </svg>5678</div>
-                <div class="favorites"><svg viewBox="0 0 24 24">
+                    </svg>5678
+                </div>
+                <div class="favorites">
+                    <svg viewBox="0 0 24 24">
                         <path fill="currentColor"
                             d="M17 1L9 1C7.89 1 7 1.89 7 3v2H4C2.9 5 2.01 5.9 2.01 7L2 21c0 1.1.89 2 1.99 2H17a2 2 0 0 0 2-2V3c0-1.1-.9-2-2-2zM9 5h6v2H9V5zm6 16H4V8h12v13z">
                         </path>
                         <path d="M0 0h24v24H0z" fill="none"></path>
-                    </svg>91011</div>
+                    </svg>91011
+                </div>
             </div>
-            <img src="https://via.placeholder.com/250x200.png" alt="" class="cover">
+            <img src="https://via.placeholder.com/250x200.png" alt="" class="cover" />
         </div>
         <div class="commentArea">
             <div class="comment">
                 <div class="container">
                     <div class="avaterbox">
-                        <img src="https://via.placeholder.com/20x20.png" alt="" class="avater">
+                        <img src="https://via.placeholder.com/20x20.png" alt="" class="avater" />
                     </div>
                     <div class="username">
                         <p>Jane Doe</p>
                     </div>
                 </div>
-                <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis eros ac lacus mattis, a
-                    fringilla leo molestie. Quisque rutrum felis nibh, ut sagittis justo egestas eget. Nullam gravida,
-                    lacus sed rhoncus scelerisque, lorem lorem rhoncus dolor, a fermentum magna nulla vitae ligula.
-                </div>
+                <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis eros ac
+                    lacus mattis, a fringilla leo molestie. Quisque rutrum felis nibh, ut sagittis justo egestas eget.
+                    Nullam gravida, lacus sed rhoncus scelerisque, lorem lorem rhoncus dolor, a fermentum magna nulla
+                    vitae ligula.</div>
             </div>
         </div>
     </div>
