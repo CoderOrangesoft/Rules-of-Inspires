@@ -1,153 +1,160 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Inspires</title>
+        <link rel="icon" href="img/i.png" type="image/x-icon" />
+        <meta charset="UTF-8" />
+        <meta
+            name="keywords"
+            content="Inspires,codemao,Codemao,workshop,work-shop,工作室"
+        />
+        <meta name="author" content="CoderOrangesoft,Cosider" />
+        <meta
+            name="description"
+            content="Creator of Inspires. ©Inspires 2023"
+        />
+        <meta property="og:title" content="Inspires" />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content=" https://coderorangesoft.github.io/Inspires"
+        />
+        <meta
+            property="og:image"
+            content="https://cdn-community.codemao.cn/47/community/d2ViXzUwMDFfMjI5Mjc1Ml8xOTAzNF8xNjg3NjkxNjY0NTYyX2Y4MzA2NjQw.png"
+        />
+        <link rel="stylesheet" href="./color.css" />
+        <style>
+            * {
+                padding: none;
+                border: none;
+            }
 
-<head>
-    <title>Inspires</title>
-    <link rel="icon" href="img/i.png" type="image/x-icon" />
-    <meta charset="UTF-8" />
-    <meta name="keywords" content="Inspires,codemao,Codemao,workshop,work-shop,工作室" />
-    <meta name="author" content="CoderOrangesoft,Cosider" />
-    <meta name="description" content="Creator of Inspires. ©Inspires 2023" />
-    <meta property="og:title" content="Inspires" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content=" https://coderorangesoft.github.io/Inspires" />
-    <meta property="og:image" content="https://cdn-community.codemao.cn/47/community/d2ViXzUwMDFfMjI5Mjc1Ml8xOTAzNF8xNjg3NjkxNjY0NTYyX2Y4MzA2NjQw.png" />
-    <link rel="stylesheet" href="./color.css" />
-    <style>
-         :root {}
-        
-        * {
-            padding: none;
-            border: none;
-        }
-        
-        #floatboard {
-            position: absolute;
-            background-color: #242C30;
-            border-radius: 5%;
-            border: 1px gold;
-        }
-        
-        #root>* {
-            position: relative;
-        }
-        
-        .stamp {
-            bottom: 0px;
-            position: relative;
-        }
-        
-        .title {
-            height: 20px;
-            margin-left: 10px gold;
-            font: 0.9em italic sans-serif gold
-        }
-        
-        .board {
-            background: #242C30 center;
-            border: 2px linear-gradient(-30deg, none 80%, gold);
-            width: 60%;
-        }
-        
-        #studio-icon {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            opacity: 50%;
-            width: 200%;
-            height: 200%;
-            z-index: 0;
-        }
-        
-        #hi {
-            top: 10px;
-            left: 50px;
-            width: 100%;
-            width: max-content;
-            border-bottom: 5px gold;
-            box-shadow: 10px gold;
-        }
-        
-        #headline {
-            font: 50px white sans-serif;
-        }
-        
-        #headline-ins {
-            font: 1.5em sans-serif;
-        }
-        
-        #headline-ins:active {
-            animation: 1s both ease-out;
-        }
-        
-        @keyframes title-light {
-            from {
-                opacity: 0%;
+            #floatboard {
+                position: absolute;
+                background-color: #242C30;
+                border-radius: 5%;
+                border: 1px gold;
             }
-            to {
-                opacity: 10%;
+
+            #root>* {
+                position: relative;
             }
-        }
-        
-        #introduce {
-            left: 50%;
-            width: 50%;
-            height: max-content;
-        }
-    </style>
-    <style>
-        work_div:active {}
-        
-        work_name {
-            font: #111 1.2em sans-serif;
-        }
-        
-        work_author_name {
-            font: #111 1em italic sans-serif;
-        }
-        
-        work_auhtor_ {}
-    </style>
-    <script src="./index.js">
-        let hoverlist = document.querySelectorAll("[fl-hover=ture]")
-        hoverlist.map(i => i.addEventListener("", () => {}))
+
+            .stamp {
+                bottom: 0px;
+                position: relative;
+            }
+
+            .title {
+                height: 20px;
+                margin-left: 10px gold;
+                font: 0.9em italic sans-serif gold
+            }
+
+            .board {
+                background: #242C30 center;
+                border: 2px linear-gradient(-30deg, none 80%, gold);
+                width: 60%;
+            }
+
+            #studio-icon {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                opacity: 50%;
+                width: 200%;
+                height: 200%;
+                z-index: 0;
+            }
+
+            #hi {
+                top: 10px;
+                left: 50px;
+                width: 100%;
+                width: max-content;
+                border-bottom: 5px gold;
+                box-shadow: 10px gold;
+            }
+
+            #headline {
+                font: 50px white sans-serif;
+            }
+
+            #headline-ins {
+                font: 1.5em sans-serif;
+            }
+
+            #headline-ins:active {
+                animation: 1s both ease-out;
+            }
+
+            @keyframes title-light {
+                from {
+                    opacity: 0%;
+                }
+
+                to {
+                    opacity: 10%;
+                }
+            }
+
+            #introduce {
+                left: 50%;
+                width: 50%;
+                height: max-content;
+            }
+        </style>
+
+        <script src="./index.js">
+            let hoverlist = document.querySelectorAll("[fl-hover=ture]")
+            hoverlist.map(i => i.addEventListener("", () => { }))
+        </script>
+    </head>
+
+    <body style="background-color: rgb(5, 8, 18)">
+        <div id="floatborad"></div>
+        <div id="root">
+            <div id="studio-icon">
+                <img
+                    src="https://githubfast.com/CoderOrangesoft/inspires/blob/main/img/icon.png"
+                />
+            </div>
+            <div id="hi">
+                <div id="headline">
+                    <p><u>Wecome</u> to <i id="headline-ins">Inspires</i></p>
+                    <p>这里是个充满<b>灵感</b>的地方</p>
+                    <div class="stamp"></div>
+                </div>
+                <div id="organizers">
+                    <p>注：不分先后</p>
+                    <div class="org-avatar" name="Cosider"></div>
+                    <div class="org-avatar" name="Orangesoft"></div>
+                    <div class="org-avatar" name=""></div>
+                    <div class="org-avatar" name=""></div>
+                </div>
+                <div id="introduce">
+                    <div class="title">Who are we</div>
+                    <div class="borad">
+                        <p>
+                            Inspire——一个由学生组织的
+                            <span style="font:x-small">非正式</span>
+                            创作组织
+                        </p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        (function () {
+            var script = document.createElement("script");
+            script.src = "//cdn.jsdelivr.net/npm/eruda";
+            document.body.appendChild(script);
+            script.onload = function () {
+                eruda.init();
+            };
+        })();
     </script>
-</head>
-
-<body style="background-color: rgb(5, 8, 18)">
-    <div id="floatborad"></div>
-    <div id="root">
-        <div id="studio-icon">
-            <img src="https://githubfast.com/CoderOrangesoft/inspires/blob/main/img/icon.png" />
-        </div>
-        <div id="hi">
-            <div id="headline">
-                <p><u>Wecome</u> to <i id="headline-ins">Inspires</i></p>
-                <p>这里是个充满<b>灵感</b>的地方</p>
-                <div class="stamp"></div>
-            </div>
-            <div id="organizers">
-                <p>注：不分先后</p>
-                <div class="org-avatar" name="Cosider">
-                </div>
-                <div class="org-avatar" name="Orangesoft"></div>
-                <div class="org-avatar" name=""></div>
-                <div class="org-avatar" name=""></div>
-            </div>
-            <div id="introduce">
-                <div class="title">Who are we</div>
-                <div class="borad">
-                    <p>
-                        Inspire——一个由学生组织的
-                        <p style="font:x-small">非正式</p>
-                        创作组织
-                    </p>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-
 </html>
-ce0documenta
