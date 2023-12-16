@@ -51,6 +51,10 @@
             #hi {
                 top: 10px;
                 left: 50px;
+                width:100%;
+                width: max-content;
+                border-bottom:5px;
+                box-shadow: 10px white;
             }
 
             #block-1 {
@@ -79,28 +83,14 @@
     <body style="background-color: rgb(5, 10, 20)">
         <div id="root">
             <div id="studio-icon">
-                <img src="/img/icon.png" />
+                <img src="https://github.com/CoderOrangesoft/inspires/blob/main/img/icon.png"/>
             </div>
             <div id="hi">
                 <div id="title" style="left: 5px">
-                    <p
-                        style="
-                            font-size: 5em;
-                            color: #fff;
-                            width: 0px;
-                            height: 10px;
-                        "
-                    >
-                        <u>Wecome</u> to <i>Inspires</i>
+                    <p>
+                        <u>Wecome</u> to <i id="title-ins">Inspires</i>
                     </p>
                 </div>
-                <!-- <div style="
-                        top: 0px;
-                        background-color: #fff;
-                        width: 400px;
-                        height: 10px;
-                    "></div> -->
-                <div id="block-1"></div>
             </div>
         </div>
     </body>
