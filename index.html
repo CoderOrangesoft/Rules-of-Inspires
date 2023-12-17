@@ -1,38 +1,31 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <title>Inspires</title>
         <link rel="icon" href="img/i.png" type="image/x-icon" />
         <meta charset="UTF-8" />
-        <meta
-            name="keywords"
-            content="Inspires,codemao,Codemao,workshop,work-shop,工作室"
-        />
+        <meta name="keywords" content="Inspires,codemao,Codemao,workshop,work-shop,工作室" />
         <meta name="author" content="CoderOrangesoft,Cosider" />
-        <meta
-            name="description"
-            content="Creator of Inspires. ©Inspires 2023"
-        />
+        <meta name="description" content="Creator of Inspires. ©Inspires 2023" />
         <meta property="og:title" content="Inspires" />
         <meta property="og:type" content="website" />
-        <meta
-            property="og:url"
-            content=" https://coderorangesoft.github.io/Inspires"
-        />
-        <meta
-            property="og:image"
-            content="https://cdn-community.codemao.cn/47/community/d2ViXzUwMDFfMjI5Mjc1Ml8xOTAzNF8xNjg3NjkxNjY0NTYyX2Y4MzA2NjQw.png"
-        />
+        <meta property="og:url" content=" https://coderorangesoft.github.io/Inspires" />
+        <meta property="og:image" content="https://cdn-community.codemao.cn/47/community/d2ViXzUwMDFfMjI5Mjc1Ml8xOTAzNF8xNjg3NjkxNjY0NTYyX2Y4MzA2NjQw.png" />
         <link rel="stylesheet" href="./color.css" />
         <style>
             * {
                 padding: none;
                 border: none;
             }
-            
-            p,i,u,b {
+
+            p,
+            i,
+            u,
+            b {
                 color: white;
             }
+
             #floatboard {
                 position: absolute;
                 background-color: #242C30;
@@ -40,7 +33,7 @@
                 border: 1px gold;
             }
 
-            #root > * {
+            #root>* {
                 position: relative;
             }
 
@@ -53,13 +46,32 @@
                 height: 20px;
                 margin-left: 10px gold;
                 font: 20px italic "Times New Roman";
-                color:gold
+                color: gold
             }
 
             .board {
-                background: #242C30 center;
-                border: 2px linear-gradient(-30deg, none 80%, gold);
+
                 width: 60%;
+            }
+
+            .board:active {
+
+                animation: boradLighter 1s both ease;
+            }
+
+            @keyframes boradLighter {
+                from {
+                    background:
+                        #242C30 center;
+                        border: 2px linear-gradient(-30deg, rgba(255 215 0 0) 80%, rgba(255 215 0 1));
+
+                }
+                to{
+                    background:
+                        #262f50 center;
+                        border: 2px linear-gradient(-30deg, rgba(255 215 0 0) 30%, rgba(255 215 0 1));
+
+                }
             }
 
             #studio-icon {
@@ -84,7 +96,7 @@
                 box-shadow: 10px gold;
             }
 
-            #headline p{
+            #headline p {
                 font: 40px "Times New Roman";
             }
 
@@ -97,10 +109,10 @@
             }
 
             #headline-ins:active {
-                animation: 1s both ease-out;
+                animation: titleLighter 1s both ease-out;
             }
 
-            @keyframes title-light {
+            @keyframes titleLighter {
                 from {
                     opacity: 0%;
                 }
@@ -127,9 +139,7 @@
         <div id="floatborad"></div>
         <div id="root">
             <div id="studio-icon">
-                <img
-                    src="https://raw.githubusercontent.com/CoderOrangesoft/inspires/main/img/icon.png"
-                />
+                <img src="https://raw.githubusercontent.com/CoderOrangesoft/inspires/main/img/icon.png" />
             </div>
             <div id="hi">
                 <div id="headline">
@@ -159,13 +169,14 @@
         </div>
     </body>
     <script>
-        (function () {
-            var script = document.createElement("script");
-            script.src = "https://cdn.jsdelivr.net/npm/eruda";
-            document.body.appendChild(script);
-            script.onload = function () {
-                eruda.init();
-            };
-        })();
+            (function () {
+                var script = document.createElement("script");
+                script.src = "https://cdn.jsdelivr.net/npm/eruda";
+                document.body.appendChild(script);
+                script.onload = function () {
+                    eruda.init();
+                };
+            })();
     </script>
+
 </html>
