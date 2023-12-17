@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <title>Inspires</title>
         <link rel="icon" href="img/i.png" type="image/x-icon" />
         <meta charset="UTF-8" />
-        <meta name="keywords" content="Inspires,codemao,Codemao,workshop,work-shop,工作室" />
+        <meta
+            name="keywords"
+            content="Inspires,codemao,Codemao,workshop,work-shop,工作室"
+        />
         <meta name="author" content="CoderOrangesoft,Cosider" />
-        <meta name="description" content="Creator of Inspires. ©Inspires 2023" />
+        <meta
+            name="description"
+            content="Creator of Inspires. ©Inspires 2023"
+        />
         <meta property="og:title" content="Inspires" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content=" https://coderorangesoft.github.io/Inspires" />
-        <meta property="og:image" content="https://cdn-community.codemao.cn/47/community/d2ViXzUwMDFfMjI5Mjc1Ml8xOTAzNF8xNjg3NjkxNjY0NTYyX2Y4MzA2NjQw.png" />
+        <meta
+            property="og:url"
+            content=" https://coderorangesoft.github.io/Inspires"
+        />
+        <meta
+            property="og:image"
+            content="https://cdn-community.codemao.cn/47/community/d2ViXzUwMDFfMjI5Mjc1Ml8xOTAzNF8xNjg3NjkxNjY0NTYyX2Y4MzA2NjQw.png"
+        />
         <link rel="stylesheet" href="./color.css" />
         <style>
             * {
@@ -38,8 +49,12 @@
             }
 
             .stamp {
+                left:auto;
                 bottom: 0px;
                 position: relative;
+                background: url(https://github.com/CoderOrangesoft/inspires/blob/main/img/star-stamp.svg);
+                color: hsl(42,100,70);
+                box-shadow: 5px;
             }
 
             .title {
@@ -96,7 +111,7 @@
                 box-shadow: 10px gold;
             }
 
-            #headline p {
+            #headline * {
                 font: 40px "Times New Roman";
             }
 
@@ -122,6 +137,10 @@
                 }
             }
 
+            #headline-est-time{
+                font: 10px;
+            }
+
             #introduce {
                 left: 50%;
                 width: 50%;
@@ -139,11 +158,14 @@
         <div id="floatborad"></div>
         <div id="root">
             <div id="studio-icon">
-                <img src="https://raw.githubusercontent.com/CoderOrangesoft/inspires/main/img/icon.png" />
+                <img
+                    src="https://raw.githubusercontent.com/CoderOrangesoft/inspires/main/img/icon.png"
+                />
             </div>
             <div id="hi">
                 <div id="headline">
                     <p><u>Wecome</u> to <i id="headline-ins">Inspires</i></p>
+                    <i id="headline-est-time">since 2022.4</i>
                     <p>这里是个充满<b>灵感</b>的地方</p>
                     <div class="stamp"></div>
                 </div>
@@ -162,7 +184,7 @@
                             <span style="font:x-small">非正式</span>
                             创作组织
                         </p>
-                      <p></p>
+                        <p></p>
                     </div>
                 </div>
                 <div id="" class="container">
@@ -175,14 +197,13 @@
         </div>
     </body>
     <script>
-            (function () {
-                var script = document.createElement("script");
-                script.src = "https://cdn.jsdelivr.net/npm/eruda";
-                document.body.appendChild(script);
-                script.onload = function () {
-                    eruda.init();
-                };
-            })();
+        (function () {
+            var script = document.createElement("script");
+            script.src = "https://cdn.jsdelivr.net/npm/eruda";
+            document.body.appendChild(script);
+            script.onload = function () {
+                eruda.init();
+            };
+        })();
     </script>
-
 </html>
