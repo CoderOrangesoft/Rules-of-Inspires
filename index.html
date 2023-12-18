@@ -1,28 +1,17 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <title>Inspires</title>
         <link rel="icon" href="img/i.png" type="image/x-icon" />
         <meta charset="UTF-8" />
-        <meta
-            name="keywords"
-            content="Inspires,codemao,Codemao,workshop,work-shop,工作室"
-        />
+        <meta name="keywords" content="Inspires,codemao,Codemao,workshop,work-shop,工作室" />
         <meta name="author" content="CoderOrangesoft,Cosider" />
-        <meta
-            name="description"
-            content="Creator of Inspires. ©Inspires 2023"
-        />
+        <meta name="description" content="Creator of Inspires. ©Inspires 2023" />
         <meta property="og:title" content="Inspires" />
         <meta property="og:type" content="website" />
-        <meta
-            property="og:url"
-            content=" https://coderorangesoft.github.io/Inspires"
-        />
-        <meta
-            property="og:image"
-            content="https://cdn-community.codemao.cn/47/community/d2ViXzUwMDFfMjI5Mjc1Ml8xOTAzNF8xNjg3NjkxNjY0NTYyX2Y4MzA2NjQw.png"
-        />
+        <meta property="og:url" content=" https://coderorangesoft.github.io/Inspires" />
+        <meta property="og:image" content="https://cdn-community.codemao.cn/47/community/d2ViXzUwMDFfMjI5Mjc1Ml8xOTAzNF8xNjg3NjkxNjY0NTYyX2Y4MzA2NjQw.png" />
         <link rel="stylesheet" href="./color.css" />
         <style>
             * {
@@ -49,11 +38,11 @@
             }
 
             .stamp {
-                left:auto;
+                left: auto;
                 bottom: 0px;
                 position: relative;
-                background: url(https://github.com/CoderOrangesoft/inspires/blob/main/img/star-stamp.svg);
-                color: hsl(42,100,70);
+                background: url(./img/star-stamp.svg);
+                color: hsl(42, 100, 70);
                 box-shadow: 5px;
             }
 
@@ -77,13 +66,14 @@
                 from {
                     background:
                         #242C30 center;
-                        border: 2px linear-gradient(-30deg, rgba(255 215 0 0) 80%, rgba(255 215 0 1));
+                    border: 2px linear-gradient(-30deg, rgba(255 215 0 0) 80%, rgba(255 215 0 1));
 
                 }
-                to{
+
+                to {
                     background:
                         #262f50 center;
-                        border: 2px linear-gradient(-30deg, rgba(255 215 0 0) 30%, rgba(255 215 0 1));
+                    border: 2px linear-gradient(-30deg, rgba(255 215 0 0) 30%, rgba(255 215 0 1));
 
                 }
             }
@@ -136,8 +126,15 @@
                 }
             }
 
-            #headline-est-time{
+            #headline-est-time {
                 font: 10px;
+            }
+
+            .org-avatar {
+                display: block;
+                border: 5px;
+                border-radius: 100%;
+                size: 50px;
             }
 
             #introduce {
@@ -147,9 +144,16 @@
             }
         </style>
 
-        <script src="./index.js">
-            let hoverlist = document.querySelectorAll("[fl-hover=ture]")
-            hoverlist.map(i => i.addEventListener("", () => { }))
+        <script src="./index.js" defer="defer">
+            // temporary
+            const organizers = [], org_avatar = document.getElementById("org-avatar")
+            organizers.forEach(i => {
+                var o = new HTMLDivElement()
+                o.className = "org-avatar"
+                o.name = i.name
+                o.style.backgroundImage = `url(${i.res})`
+                org_avatar.appendChild()
+            })
         </script>
     </head>
 
@@ -157,9 +161,7 @@
         <div id="floatborad"></div>
         <div id="root">
             <div id="studio-icon">
-                <img
-                    src="https://raw.githubusercontent.com/CoderOrangesoft/inspires/main/img/icon.png"
-                />
+                <img src="./img/icon.png" />
             </div>
             <div id="hi">
                 <div id="headline">
@@ -170,10 +172,6 @@
                 </div>
                 <div id="organizers">
                     <p>注：不分先后</p>
-                    <div class="org-avatar" name="Cosider"></div>
-                    <div class="org-avatar" name="Orangesoft"></div>
-                    <div class="org-avatar" name=""></div>
-                    <div class="org-avatar" name=""></div>
                 </div>
                 <div id="introduce" class="container">
                     <div class="title">Who are we</div>
@@ -196,13 +194,14 @@
         </div>
     </body>
     <script>
-        (function () {
-            var script = document.createElement("script");
-            script.src = "https://cdn.jsdelivr.net/npm/eruda";
-            document.body.appendChild(script);
-            script.onload = function () {
-                eruda.init();
-            };
-        })();
+            (function () {
+                var script = document.createElement("script");
+                script.src = "https://cdn.jsdelivr.net/npm/eruda";
+                document.body.appendChild(script);
+                script.onload = function () {
+                    eruda.init();
+                };
+            })();
     </script>
+
 </html>
