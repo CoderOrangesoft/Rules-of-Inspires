@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <title>Inspires</title>
         <link rel="icon" href="img/i.png" type="image/x-icon" />
         <meta charset="UTF-8" />
-        <meta name="keywords" content="Inspires,codemao,Codemao,workshop,work-shop,工作室" />
+        <meta
+            name="keywords"
+            content="Inspires,codemao,Codemao,workshop,work-shop,工作室"
+        />
         <meta name="author" content="CoderOrangesoft,Cosider" />
-        <meta name="description" content="Creator of Inspires. ©Inspires 2023" />
+        <meta
+            name="description"
+            content="Creator of Inspires. ©Inspires 2023"
+        />
         <meta property="og:title" content="Inspires" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content=" https://coderorangesoft.github.io/Inspires" />
-        <meta property="og:image" content="https://cdn-community.codemao.cn/47/community/d2ViXzUwMDFfMjI5Mjc1Ml8xOTAzNF8xNjg3NjkxNjY0NTYyX2Y4MzA2NjQw.png" />
+        <meta
+            property="og:url"
+            content=" https://coderorangesoft.github.io/Inspires"
+        />
+        <meta
+            property="og:image"
+            content="https://cdn-community.codemao.cn/47/community/d2ViXzUwMDFfMjI5Mjc1Ml8xOTAzNF8xNjg3NjkxNjY0NTYyX2Y4MzA2NjQw.png"
+        />
         <link rel="stylesheet" href="./color.css" />
         <style>
             * {
@@ -31,6 +42,7 @@
                 background-color: #242C30;
                 border-radius: 5%;
                 border: 1px gold;
+                visibility: hidden;
             }
 
             #root>* {
@@ -154,6 +166,12 @@
                 o.style.backgroundImage = `url(${i.res})`
                 org_avatar.appendChild()
             })
+
+            const floatborad = document.getElementById('floatborad')
+            addEventListener("focus",()=>{
+                floatborad.style.top = 
+                floatborad.textContent = 
+            })
         </script>
     </head>
 
@@ -194,14 +212,13 @@
         </div>
     </body>
     <script>
-            (function () {
-                var script = document.createElement("script");
-                script.src = "https://cdn.jsdelivr.net/npm/eruda";
-                document.body.appendChild(script);
-                script.onload = function () {
-                    eruda.init();
-                };
-            })();
+        (function () {
+            var script = document.createElement("script");
+            script.src = "https://cdn.jsdelivr.net/npm/eruda";
+            document.body.appendChild(script);
+            script.onload = function () {
+                eruda.init();
+            };
+        })();
     </script>
-
 </html>
