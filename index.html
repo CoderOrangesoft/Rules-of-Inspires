@@ -28,6 +28,8 @@
             * {
                 padding: none;
                 border: none;
+                line-height: 1rem;
+
             }
 
             p,
@@ -49,6 +51,11 @@
                 position: relative;
             }
 
+            .container{
+                align-items: left;
+                border: 10px;
+            }
+
             .stamp {
                 left: auto;
                 bottom: 0px;
@@ -66,12 +73,12 @@
             }
 
             .board {
-
-                width: 60%;
+                left: 50%;
+                width:  ;
             }
 
             .board:active {
-                animation: boradLighter 1s both ease;
+                animation: boradLighter 2s both linear;
             }
 
             @keyframes boradLighter {
@@ -103,7 +110,7 @@
             #hi {
                 margin: 5px 10px 10px;
                 width: 100%;
-                width: max-content;
+                height: max-content;
             }
 
             #headline {
@@ -112,12 +119,8 @@
                 box-shadow: 10px gold;
             }
 
-            #headline * {
-                font: 40px sans-serif;
-            }
-
-            #headline p+p {
-                font: 20px;
+            #headline p {
+                font: 30px sans-serif;
             }
 
             #headline-ins {
@@ -125,21 +128,22 @@
             }
 
             #headline-ins:active {
-                animation: titleLighter 1s both ease-out;
+                animation: titleLighter 0s both ease-out;
             }
 
             @keyframes titleLighter {
                 from {
-                    opacity: 0%;
+                    opacity: 100%;
+                    filter: blur(0%);
                 }
 
                 to {
-                    opacity: 10%;
+                    filter: blur(20%);
                 }
             }
 
             #headline-est-time {
-                font: 10px;
+                font-size: 20px;
             }
 
             .org-avatar {
@@ -169,8 +173,8 @@
 
             const floatborad = document.getElementById('floatborad')
             addEventListener("focus",()=>{
-                floatborad.style.top = 
-                floatborad.textContent = 
+                floatborad.style.top = ""
+                floatborad.textContent = "" 
             })
         </script>
     </head>
