@@ -52,7 +52,7 @@
             }
 
             .container {
-                align-items: left;
+                margin: 10px auto 10px 15vw;
                 border: 10px;
             }
 
@@ -73,8 +73,7 @@
             }
 
             .board {
-                left: 50;
-                width:80vw;
+                width: 80vw;
             }
 
             .board:active {
@@ -116,13 +115,14 @@
 
             #hi {
                 margin: 5px 10px 10px;
-                width: 100%;
+                width: 100vw;
                 height: max-content;
             }
 
             #headline {
                 border-bottom: 5px gold;
                 box-shadow: 10px gold;
+                height: 200px;
             }
 
             #headline p {
@@ -149,7 +149,7 @@
             }
 
             #headline-est-time {
-                font-size: 15px ;
+                font-size: 15px;
                 font-family: "Times New Roman";
             }
 
@@ -165,8 +165,7 @@
             }
 
             #introduce {
-                left: 50%;
-                width: 50%;
+                width: 60vw;
                 height: max-content;
             }
         </style>
@@ -202,15 +201,13 @@
                         <u>Wecome</u> to <i id="headline-ins">Inspires</i>
                     </p>
                     <i id="headline-est-time">since 2022.4</i>
-                    <div id="signature">
-                        这里是个充满<b>灵感</b>的地方
-                    </div>
-                    
+                    <div id="signature">这里是个充满<b>灵感</b>的地方</div>
+
                     <div class="stamp"></div>
                 </div>
-                <div id="organizers">
+                <!-- <div id="organizers">
                     <p>注：不分先后</p>
-                </div>
+                </div> -->
                 <div id="introduce" class="container">
                     <div class="title">Who are we</div>
                     <div class="board">
