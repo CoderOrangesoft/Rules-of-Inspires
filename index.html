@@ -28,30 +28,30 @@
             * {
                 padding: none;
                 border: none;
-                line-height: 1rem;
-
             }
 
             p,
             i,
             u,
             b {
+                margin: 0 0 1.2em 0;
+                line-height: 1rem;
                 color: white;
             }
 
             #floatboard {
                 position: absolute;
-                background-color: #242C30;
+                background-color: #242c30;
                 border-radius: 5%;
                 border: 1px gold;
                 visibility: hidden;
             }
 
-            #root>* {
+            #root > * {
                 position: relative;
             }
 
-            .container{
+            .container {
                 align-items: left;
                 border: 10px;
             }
@@ -69,12 +69,12 @@
                 height: 20px;
                 margin-left: 10px gold;
                 font: 20px italic "Times New Roman";
-                color: gold
+                color: gold;
             }
 
             .board {
-                left: 50%;
-                width:  ;
+                left: 50;
+                width:80vw;
             }
 
             .board:active {
@@ -83,17 +83,23 @@
 
             @keyframes boradLighter {
                 from {
-                    background:
-                        #242C30 center;
-                    border: 2px linear-gradient(-30deg, rgba(255 215 0 0) 80%, rgba(255 215 0 1));
-
+                    background: #242c30 center;
+                    border: 2px
+                        linear-gradient(
+                            -30deg,
+                            rgba(255 215 0 0) 80%,
+                            rgba(255 215 0 1)
+                        );
                 }
 
                 to {
-                    background:
-                        #262f50 center;
-                    border: 2px linear-gradient(-30deg, rgba(255 215 0 0) 30%, rgba(255 215 0 1));
-
+                    background: #262f50 center;
+                    border: 2px
+                        linear-gradient(
+                            -30deg,
+                            rgba(255 215 0 0) 30%,
+                            rgba(255 215 0 1)
+                        );
                 }
             }
 
@@ -115,7 +121,6 @@
             }
 
             #headline {
-                align-self: center;
                 border-bottom: 5px gold;
                 box-shadow: 10px gold;
             }
@@ -144,7 +149,12 @@
             }
 
             #headline-est-time {
-                font: 15px italic "Times New Roman";
+                font-size: 15px ;
+                font-family: "Times New Roman";
+            }
+
+            #signature {
+                margin-top: 4px;
             }
 
             .org-avatar {
@@ -175,7 +185,7 @@
             const floatborad = document.getElementById('floatborad')
             addEventListener("focus",()=>{
                 floatborad.style.top = ""
-                floatborad.textContent = "" 
+                floatborad.textContent = ""
             })
         </script>
     </head>
@@ -188,9 +198,14 @@
             </div>
             <div id="hi">
                 <div id="headline">
-                    <p style="margin: 30px 0 10px;"><u>Wecome</u> to <i id="headline-ins">Inspires</i></p>
+                    <p style="margin: 30px 0 10px">
+                        <u>Wecome</u> to <i id="headline-ins">Inspires</i>
+                    </p>
                     <i id="headline-est-time">since 2022.4</i>
-                    <p>这里是个充满<b>灵感</b>的地方</p>
+                    <div id="signature">
+                        这里是个充满<b>灵感</b>的地方
+                    </div>
+                    
                     <div class="stamp"></div>
                 </div>
                 <div id="organizers">
@@ -201,7 +216,7 @@
                     <div class="board">
                         <p>
                             Inspire——一个由学生组织的
-                            <span style="font:x-small">非正式</span>
+                            <span style="font: x-small">非正式</span>
                             创作组织
                         </p>
                         <p></p>
