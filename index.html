@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Inspires</title>
-        <link rel="icon" href="img/i.png" type="image/x-icon" />
+        <link rel="icon" href="img/icon.png" type="image/x-icon" />
         <meta charset="UTF-8" />
         <meta
             name="keywords"
@@ -23,10 +23,10 @@
             property="og:image"
             content="https://cdn-community.codemao.cn/47/community/d2ViXzUwMDFfMjI5Mjc1Ml8xOTAzNF8xNjg3NjkxNjY0NTYyX2Y4MzA2NjQw.png"
         />
+        。
         <link rel="stylesheet" href="./color.css" />
         <style>
-            :root{
-                --border-weight: calc()
+            :root {
             }
 
             * {
@@ -56,12 +56,14 @@
             }
 
             .container {
+                top: 10px;
+                width: 100vw;
                 margin: 10px auto 10px 15vw;
                 border: 10px;
             }
 
             .stamp {
-                left: auto;
+                left: 50%;
                 bottom: 0px;
                 position: relative;
                 background: url(./img/star-stamp.svg);
@@ -70,14 +72,16 @@
             }
 
             .title {
-                height: 20px;
+                height: 30px;
                 margin-left: 10px gold;
-                font: 20px italic "Times New Roman";
+                font: 1rem "Times New Roman";
+                font-style: italic;
                 color: gold;
             }
 
             .board {
                 width: 80vw;
+                border: 2px;
             }
 
             .board:active {
@@ -87,22 +91,20 @@
             @keyframes boradLighter {
                 from {
                     background: #242c30 center;
-                    border: 2px
-                        linear-gradient(
-                            -30deg,
-                            rgba(255 215 0 0) 80%,
-                            rgba(255 215 0 1)
-                        );
+                    border: linear-gradient(
+                        -30deg,
+                        rgba(255 215 0 0) 80%,
+                        rgba(255 215 0 1)
+                    );
                 }
 
                 to {
                     background: #262f50 center;
-                    border: 2px
-                        linear-gradient(
-                            -30deg,
-                            rgba(255 215 0 0) 30%,
-                            rgba(255 215 0 1)
-                        );
+                    border: linear-gradient(
+                        -30deg,
+                        rgba(255 215 0 0) 30%,
+                        rgba(255 215 0 1)
+                    );
                 }
             }
 
@@ -124,7 +126,7 @@
             }
 
             #headline {
-                border-bottom: inset  gold;
+                border-bottom: solid gold;
                 box-shadow: 10px gold;
                 height: 200px;
             }
@@ -161,8 +163,28 @@
             }
 
             #introduce {
-                width: 60vw;
                 height: max-content;
+            }
+
+            #recommend_works{
+                height: fit-content;
+            }
+
+            col{
+
+            }
+            .work_card{
+                display: flex;
+                flex-direction: row;
+                height: 200px;
+                width: 130px;
+                background-color: snow;
+                border: solid 3px;
+                border-radius: 5px;
+            }
+
+            .{
+
             }
         </style>
 
@@ -222,6 +244,28 @@
                     <div class="board">
                         <p></p>
                     </div>
+                </div>
+                <div id="recommend_works" class="container">
+                    <col type=""> 
+                        <div class="work_card">
+                            <div class="work_cover"></div>
+                            <div class="work_infoboard">
+                                <div class="work_view"></div>
+                                <div class="work_like"></div>
+                                <div class="platform"></div>
+                            </div>
+
+                        </div>
+                        <div class="work_card">
+                            <div class="work_cover"></div>
+                            <div class="work_infoboard">
+                                <div class="work_view"></div>
+                                <div class="work_like"></div>
+                                <div class="platform"></div>
+                            </div>
+
+                    </col>
+                    col
                 </div>
             </div>
         </div>
